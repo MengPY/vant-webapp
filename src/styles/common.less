@@ -1,0 +1,389 @@
+/** 全局通用样式表 如有需要可自行添加 **/
+/** 
+    vue组件引入示例
+    @import "~@/styles/common.less";
+    .btn {
+        .xs-btn();
+        .sm-btn();
+        .lg-btn();
+        color: @orange_color;
+        .margin-top-(100px);
+        .border(1px solid #f66);
+        .border-radius(50%);
+        .box-shadow(3px 3px 3px #ddd);
+        .font_size(20px);
+    }
+
+**/
+
+/** color **/
+@main_blue: #0067c4; // 主⾊，用于特别需要突出强调的按钮或者icon或者链接
+@green_color: #326cd5; // ⽤于安全可点击的按钮，状态安全⽂文字
+@orange_blue: #ffa714; // 用于提示性的icon，状态⽂字
+@red_color: #ff1414; // 警示作⽤
+
+@header_bg: #f2f2f2; // header背景
+@block_bg: #f5f5f5; // 背景底色
+@table_head: #fafafa; // 表格头部
+@split_color: #f0f0f0; // 分割线
+@footer_bg: #414141; // footer背景
+@border_color: #d9d9d9; //边框、描边
+
+/** font-color **/
+@title_color: #262626; // ⼀标题、⼤标题
+@text_color: #595959; // 正文文本
+@desc_color: #8c8c8c; // 次要层级信息文字
+@disabed_color: #bfbfbf; // 按钮、⽂文字禁⽤状态
+@origin_white: #ffffff; //通用白色
+@link_color: #0062cd; //文字链接
+@orange_color: #ff9940; //突出文字
+
+/** font **/
+@cn_font: "Pingfang SC";
+@en_family: "SF UI Text";
+@num_family: "Helvetica Neue";
+@code_family: "Consolas";
+
+.font_size(@px: 14px) {
+  font-size: @px;
+}
+
+.text_align(@direction: center) {
+  text-align: @direction;
+}
+
+.line_height(@px: 1.5) {
+  line-height: @px;
+}
+
+.text_area {
+  font-size: 14px;
+  font-family: "Pingfang SC";
+  line-height: 1.5;
+}
+
+/** heading **/
+.heading1 {
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.heading2 {
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.heading3 {
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.heading4 {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.heading5 {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.heading6 {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+/** button **/
+.lj-btn {
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 1;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  color: #fff;
+  padding: 5px 16px;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border: 1px solid inherit;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.lj-xs-btn {
+  .lj-btn();
+  padding: 1px 8px;
+  font-size: 12px;
+}
+
+.lj-sm-btn {
+  .lj-btn();
+  padding: 5px 16px;
+  font-size: 14px;
+}
+
+.lj-lg-btn {
+  .lj-btn();
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.primary_btn {
+  background: @main_blue;
+}
+
+.secondary_btn {
+  color: @text_color;
+  border: 1px solid @border_color;
+}
+
+.dashed_btn {
+  color: @text_color;
+  border: 1px dashed @border_color;
+}
+
+.disabled_btn {
+  color: @disabed_color;
+  border: 1px solid @border_color;
+  background: #eee;
+}
+
+.danger_btn {
+  background: @red_color;
+}
+
+.danger_border_btn {
+  color: @red_color;
+  border: 1px solid @red_color;
+}
+
+.danger_text_btn {
+  color: @red_color;
+}
+
+.ghost_btn {
+  background: #000;
+  color: #999;
+  border: 1px solid #999;
+}
+
+.text_btn {
+  color: @main_blue;
+}
+
+/** 按钮示例 **/
+// <div class="sm-btn danger_btn">测试按钮按钮</div>
+
+/***** margin ******/
+.margin-top-(@px) {
+  margin-top: @px;
+}
+
+.margin-bottom-(@px) {
+  margin-bottom: @px;
+}
+
+.margin-left-(@px) {
+  margin-left: @px;
+}
+
+.margin-right-(@px) {
+  margin-right: @px;
+}
+
+/***** padding ******/
+.padding-top-(@px) {
+  padding-top: @px;
+}
+
+.padding-bottom-(@px) {
+  padding-bottom: @px;
+}
+
+.padding-left-(@px) {
+  padding-left: @px;
+}
+
+.padding-right-(@px) {
+  padding-right: @px;
+}
+
+/***** border ******/
+.border(@style) {
+  border: @style;
+}
+
+.border-top(@style) {
+  border-top: @style;
+}
+
+.border-bottom(@style) {
+  border-bottom: @style;
+}
+
+.border-left(@style) {
+  border-left: @style;
+}
+
+.border-right(@style) {
+  border-right: @style;
+}
+
+.border-radius(@style) {
+  border-radius: @style;
+}
+
+.box-shadow(@style) {
+  box-shadow: @style;
+}
+
+// 全局表格 表格查询条件样式
+.single-page {
+  .ivu-collapse {
+    margin-bottom: 10px;
+  }
+
+  .queryForm .ivu-form-item {
+    width: 24%;
+    margin-bottom: 5px;
+  }
+
+  .queryForm .ivu-date-picker {
+    width: 100%;
+  }
+
+  .queryForm .ivu-input-number {
+    width: 47%;
+  }
+
+  .ivu-collapse-content {
+    padding: 0 10px;
+  }
+
+  .ivu-collapse-content > .ivu-collapse-content-box {
+    padding: 10px 0;
+  }
+
+  .actionBtns {
+    text-align: right;
+    margin-bottom: 10px;
+
+    button {
+      margin-left: 10px;
+    }
+  }
+
+  .table-page {
+    height: 32px;
+    margin: 10px 0;
+  }
+
+  .ivu-page {
+    float: right;
+  }
+}
+
+.ivu-table-wrapper .ivu-table-header .ivu-table-cell,
+.ivu-table-wrapper .ivu-table-fixed-header .ivu-table-cell {
+  // display: flex;
+  // align-items: center;
+}
+
+.ivu-dropdown-menu {
+  min-width: 140px;
+}
+
+//值集下拉demo样式
+.lj-form-inline-four {
+  .ivu-form-item {
+    width: 280px;
+    margin-right: 40px;
+  }
+}
+
+//伸缩框头部样式
+.ivu-collapse .ivu-collapse-header,
+.ivu-collapse .ivu-collapse-header {
+  .left-content {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 30px;
+
+    .title,
+    .alert {
+      float: left;
+    }
+
+    .alert {
+      margin-top: 7px;
+      margin-left: 30px;
+
+      .ivu-alert.ivu-alert-with-icon {
+        padding: 3px 38px;
+      }
+
+      .ivu-alert-icon {
+        top: 2px;
+      }
+    }
+  }
+
+  .operation {
+    float: right;
+    margin-bottom: 0;
+  }
+}
+
+// //iview table滚动条样式 (有数据)
+// .ivu-table-overflowX::-webkit-scrollbar {
+//     width: 8px;
+//     background: #f2f2f2;
+// }
+
+// .ivu-table-overflowX::-webkit-scrollbar-button {
+//     display: none;
+// }
+
+// .ivu-table-overflowX::-webkit-scrollbar-thumb {
+//     background: #aaa;
+// }
+
+// .ivu-table-overflowX::-webkit-scrollbar-thumb:active {
+//     background: #999;
+// }
+
+//iview table滚动条样式 (无数据)
+.ivu-table-tip::-webkit-scrollbar {
+  width: 8px;
+  background: #f2f2f2;
+}
+
+.ivu-table-tip::-webkit-scrollbar-button {
+  display: none;
+}
+
+.ivu-table-tip::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+.ivu-table-tip::-webkit-scrollbar-thumb:active {
+  background: #999;
+}
+
+//按钮的手型效果
+.button-edit {
+  cursor: pointer;
+}
+.ivu-modal-header p,
+.ivu-modal-header-inner {
+  font-weight: bold;
+}

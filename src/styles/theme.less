@@ -1,0 +1,90 @@
+@import "./reset.less";
+@import "./loading.less";
+// @import '~vant/lib/index.css';
+//https://github.com/view-design/ViewUI/blob/master/src/styles/custom.less
+
+@primary-color: #0072bc;
+// @button-small-height: 20px;
+// @media screen and (max-width: 1024px) {
+//   html {
+//       font-size: calc(100vw / 7.5);
+//   }
+// }
+
+// body 也增加最大最小宽度限制，避免默认100%宽度的 block 元素跟随 body 而过大过小
+body {
+  margin: auto;
+  max-width: 540px;
+  min-width: 320px;
+}
+html,
+body {
+  background: #F6F7F9;
+  height: 100%;
+}
+
+#app {
+  font-size: initial;
+}
+
+
+.operation-btn {
+  display: inline-block;
+  color: @primary-color;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.manage-header {
+  background: #fbfcff;
+  height: 52px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 0 0 3px -1px #ddd;
+  border-bottom: 1px solid #e8eaec;
+  position: relative;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.page {
+  margin-top: 10px;
+}
+
+// 文本超过两行高度，省略号
+.text-overflow-out {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.text-overflow-out-one {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.text-overflow-out-one :hover{
+  text-overflow:inherit; 
+  overflow: visible; 
+  white-space: pre-line;  
+}
+
+.ivu-table-header thead tr th {
+  position: static;
+}
+.ivu-table-cell-tooltip-content{
+  overflow: auto;
+  overflow-x:hidden
+}
