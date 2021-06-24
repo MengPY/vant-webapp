@@ -1,23 +1,38 @@
 <template>
-  <div id="main" class="app-main">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <router-view></router-view>
+  <div class="main-wrap">
+    <div class="content-wrap">
+      <!-- 路由匹配到的组件将渲染在这里 -->
+      <router-view></router-view>
+    </div>
+    <MainFooter></MainFooter>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {};
-  },
-  mounted() {},
-  beforeDestroy() {},
-  methods: {},
-};
+<script setup>
+import MainFooter from './components/MainFooter.vue'
+// This starter template is using Vue 3 experimental <script setup> SFCs
+// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>
 
-<style scoped lang="less">
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+#app {
+  height: 100%;
+}
+.main-wrap {
+  height: 100%;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+.content-wrap {
+  background: #fefefe;
+}
 </style>
