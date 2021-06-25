@@ -1,38 +1,50 @@
 <template>
-  <div class="main-wrap">
-    <div class="content-wrap">
-      <!-- 路由匹配到的组件将渲染在这里 -->
-      <router-view></router-view>
-    </div>
-    <MainFooter></MainFooter>
+  <div id="app">
+    <router-view/>
   </div>
 </template>
 
-<script setup>
-import MainFooter from './components/MainFooter.vue'
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+<script>
+  export default {
+    name: 'app',
+    data: () => ({
+    }),
+  }
 </script>
 
 <style>
-html, body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
 #app {
-  height: 100%;
 }
-.main-wrap {
-  height: 100%;
-  position: relative;
+
+/*::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.3rem;
 }
-a {
-  text-decoration: none;
+::-webkit-scrollbar-track {
+  border-radius: 0;
 }
-.content-wrap {
-  background: #fefefe;
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #535353;
+  transition: all .2s;
 }
+::-webkit-scrollbar-thumb:hover {
+  background-color: #606060;
+}
+
+::-webkit-scrollbar-corner{
+  background: #232323;
+  }*/
+  body{
+    font-size:13px;
+  }
+
+  .flex-1{
+    flex:1;
+  }
+
+  .shrink-0{
+    flex-shrink:0;
+  }
+
 </style>

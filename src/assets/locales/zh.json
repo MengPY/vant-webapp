@@ -1,0 +1,92 @@
+{
+  "base":{
+    "save":"保存",
+    "cancel":"取消",
+    "close":"关闭",
+    "clear":"清空",
+    "confirm":"确定",
+    "error" : "错误",
+    "operateSuccess" : "操作成功！"
+  },
+
+  "list":{
+    "add-new":"新建",
+    "list-counts":"共 {0} 条",
+    "selected-counts":"已选中{0}条",
+    "select-all":"全选"
+  },
+
+  "notification":{
+    "all" : "全部",
+    "list" : "通知列表",
+    "view" : "查看通知"
+  },
+
+  "media":{
+    "medias":"媒体库",
+    "images" : "图片",
+    "videos" : "视频",
+    "files" : "文件",
+    "folder" : "文件夹",
+    "edit-alt" : "编辑图片Alt文本",
+    "remove-all" : "删除所有图片和视频",
+    "alt-tips" : "为图片添加Alt文本， 以提高在搜索引擎中的表现，注意每个图片的文本是唯一的。",
+    "alt-text" : "图片的Alt文本",
+    "copy-to-all" : "复制到所有图片",
+    "cancel" : "取消",
+    "confirm" : "确定",
+    "select" : "选择",
+    "select-medias" : "选择媒体",
+    "view-media" : "查看媒体",
+    "upload-files" : "上传文件",
+    "root" : "根目录",
+    "selected-counts" : "已选中 {0} 个文件",
+    "new-folder" : "新文件夹",
+    "drag-here" : "把文件拖放到此处",
+    "last-modified":"更新日期",
+    "name" : "名字",
+    "descending" : "由新到旧",
+    "ascending" : "由旧到新"
+  },
+
+  "debug":{
+    "debug":"调试",
+    "slogan" : "抓虫、抓虫，其乐无穷",
+    "report-bug" : "提交Bug",
+    "clear":"清空"
+  },
+
+  "login":{
+    "welcome":"欢迎使用Vular",
+    "email":"邮箱",
+    "password":"密码",
+    "forgot":"忘记密码？",
+    "login":"登录"
+  },
+
+  "account":{
+    "profile":"个人信息",
+    "change-password":"修改密码",
+    "logout":"退出",
+    "old-password":"原密码",
+    "new-password":"新密码",
+    "re-new-password":"重新输入新密码"
+  },
+
+  "custumized":{
+    "modules":"模块"
+  },
+
+  "design":{
+    "design-title":"{0}设计",
+    "toolbox":"工具箱",
+    "page-layout":"页面布局",
+    "page-header":"页眉",
+    "page-content":"页面内容",
+    "page-footer":"页脚",
+    "grid":"栅格",
+    "row":"行",
+    "column":"列"
+  }
+
+}
